@@ -20,7 +20,7 @@ File -> project structure -> Libraries -> 添加本地jar包，即可使用。
 
 ## 编码十六进制协议
 
-将十进制数据属性转换为十六进制字符串
+将十进制的数据属性，转换为十六进制协议字符串
 
 ```
 import com.ten.air.protocol.ProtocolEncode;
@@ -38,7 +38,7 @@ String encode(AirRecord airRecord){
 
 ## 解码十六进制协议
 
-将十六进制的数据属性转换为十进制的数据属性
+将十六进制的协议字符串，转换为十进制的数据属性，封装在AirRecord对象中返回
 
 ```
 import com.ten.air.protocol.ProtocolDecode;
@@ -46,11 +46,9 @@ import com.ten.air.protocol.bean.AirRecord;
 
 use case:
 
-AirRecord decode(AirRecord airRecord){
-    // 获取记录对象，四个必需属性
-    AirRecord airRecord = [temperature, pm25, co2, so2];
-    // 将对象编码为十六机制协议字符串
-    AirRecord protocol = ProtocolDecode.parseProtocol(airRecord);
+AirRecord decode(String protocol){
+    // 将十六进制的协议字符串，转换为十进制的数据属性，封装在AirRecord对象中返回
+    AirRecord airRecord = ProtocolDecode.parseProtocol(protocol);
 }
 ```
 

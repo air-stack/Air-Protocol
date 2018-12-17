@@ -7,11 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="de561078-d416-428c-bb7f-cd08cfde95f6" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/Air_Protocol_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/ten/air/protocol/ProtocolEncodeTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/ten/air/protocol/ProtocolEncodeTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ten/air/protocol/ProtocolDecode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ten/air/protocol/ProtocolDecode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/ten/air/protocol/ProtocolDecodeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ten/air/protocol/ProtocolDecodeTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -24,7 +22,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-315">
@@ -51,18 +49,18 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProtocolDecode.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ProtocolDecode.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/air/protocol/ProtocolDecode.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1400">
-              <caret line="68" selection-start-line="68" selection-end-line="68" />
+            <state relative-caret-position="147">
+              <caret line="16" column="41" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="41" />
               <folding>
-                <element signature="e#1273#1274#0" expanded="true" />
-                <element signature="e#1314#1315#0" expanded="true" />
-                <element signature="e#1422#1423#0" expanded="true" />
-                <element signature="e#1462#1463#0" expanded="true" />
-                <element signature="e#1570#1571#0" expanded="true" />
-                <element signature="e#1610#1611#0" expanded="true" />
+                <element signature="e#2655#2656#0" expanded="true" />
+                <element signature="e#2696#2697#0" expanded="true" />
+                <element signature="e#2804#2805#0" expanded="true" />
+                <element signature="e#2844#2845#0" expanded="true" />
+                <element signature="e#2952#2953#0" expanded="true" />
+                <element signature="e#2992#2993#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -89,8 +87,8 @@
       <file leaf-file-name="ProtocolDecodeTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/ten/air/protocol/ProtocolDecodeTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="439">
-              <caret line="56" column="4" selection-start-line="31" selection-start-column="7" selection-end-line="56" selection-end-column="4" />
+            <state relative-caret-position="924">
+              <caret line="44" column="34" lean-forward="true" selection-start-line="44" selection-start-column="34" selection-end-line="44" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -101,8 +99,8 @@
       <file leaf-file-name="AirRecord.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/air/protocol/bean/AirRecord.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="66" column="18" selection-start-line="66" selection-start-column="18" selection-end-line="66" selection-end-column="18" />
+            <state relative-caret-position="1029">
+              <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
               <folding>
                 <element signature="e#1454#1455#0" expanded="true" />
                 <element signature="e#1483#1484#0" expanded="true" />
@@ -114,9 +112,9 @@
       <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="252">
-                <caret line="12" selection-start-line="12" selection-end-line="12" />
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="-654">
+                <caret line="22" column="22" lean-forward="true" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
               </first_editor>
               <second_editor />
             </state>
@@ -164,12 +162,12 @@
         <option value="$PROJECT_DIR$/src/main/java/com/ten/air/protocol/bean/AirRecord.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ten/air/protocol/ProtocolGenerator.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/ten/air/protocol/ProtocolGeneratorTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ten/air/protocol/ProtocolDecode.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/ten/air/protocol/ProtocolDecodeTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ten/air/protocol/ProtocolEncode.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/ten/air/protocol/ProtocolEncodeTest.java" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ten/air/protocol/ProtocolDecode.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/ten/air/protocol/ProtocolDecodeTest.java" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -305,7 +303,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15795207" />
     <property name="project.structure.side.proportion" value="0.38919514" />
   </component>
@@ -332,7 +330,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ProtocolEncodeTest.testToHexProtocol">
+  <component name="RunManager" selected="JUnit.ProtocolDecodeTest.testParseProtocol">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -349,6 +347,29 @@
       <option name="PACKAGE_NAME" value="com.ten.air.protocol" />
       <option name="MAIN_CLASS_NAME" value="com.ten.air.protocol.ProtocolDecodeTest" />
       <option name="METHOD_NAME" value="testParseProtocol" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="ProtocolDecodeTest.testToDecimalProtocol" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Air-Protocol" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ten.air.protocol.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.ten.air.protocol" />
+      <option name="MAIN_CLASS_NAME" value="com.ten.air.protocol.ProtocolDecodeTest" />
+      <option name="METHOD_NAME" value="testToDecimalProtocol" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -447,11 +468,13 @@
       <item itemvalue="JUnit.ProtocolGeneratorTest.testGenMockProtocol" />
       <item itemvalue="JUnit.ProtocolDecodeTest.testParseProtocol" />
       <item itemvalue="JUnit.ProtocolEncodeTest.testToHexProtocol" />
+      <item itemvalue="JUnit.ProtocolDecodeTest.testToDecimalProtocol" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ProtocolEncodeTest.testToHexProtocol" />
         <item itemvalue="JUnit.ProtocolDecodeTest.testParseProtocol" />
+        <item itemvalue="JUnit.ProtocolDecodeTest.testToDecimalProtocol" />
+        <item itemvalue="JUnit.ProtocolEncodeTest.testToHexProtocol" />
         <item itemvalue="JUnit.ProtocolGeneratorTest.testGenMockProtocol" />
       </list>
     </recent_temporary>
@@ -467,29 +490,19 @@
       <option name="presentableId" value="Default" />
       <updated>1545007055726</updated>
       <workItem from="1545007058911" duration="7803000" />
-      <workItem from="1545029841924" duration="3643000" />
+      <workItem from="1545029841924" duration="5718000" />
     </task>
+    <task id="LOCAL-00001" summary="add local jar">
+      <created>1545033681242</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1545033681243</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ProtocolDecodeTest_testParseProtocol - 2018.12.17 at 15h 26m 43s.xml">
-      <configuration name="ProtocolDecodeTest.testParseProtocol" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ProtocolEncodeTest_testToHexProtocol - 2018.12.17 at 15h 30m 27s.xml">
-      <configuration name="ProtocolEncodeTest.testToHexProtocol" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ProtocolEncodeTest_testToHexProtocol - 2018.12.17 at 15h 31m 23s.xml">
-      <configuration name="ProtocolEncodeTest.testToHexProtocol" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ProtocolEncodeTest_testToHexProtocol - 2018.12.17 at 15h 31m 53s.xml">
-      <configuration name="ProtocolEncodeTest.testToHexProtocol" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ProtocolEncodeTest_testToHexProtocol - 2018.12.17 at 15h 35m 00s.xml">
-      <configuration name="ProtocolEncodeTest.testToHexProtocol" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ProtocolEncodeTest_testToHexProtocol - 2018.12.17 at 15h 35m 22s.xml">
-      <configuration name="ProtocolEncodeTest.testToHexProtocol" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="ProtocolEncodeTest_testToHexProtocol - 2018.12.17 at 15h 35m 58s.xml">
       <configuration name="ProtocolEncodeTest.testToHexProtocol" configurationId="JUnit" />
     </history-entry>
@@ -502,9 +515,27 @@
     <history-entry file="ProtocolEncodeTest_testToHexProtocol - 2018.12.17 at 15h 40m 05s.xml">
       <configuration name="ProtocolEncodeTest.testToHexProtocol" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="ProtocolDecodeTest_testToDecimalProtocol - 2018.12.17 at 16h 15m 18s.xml">
+      <configuration name="ProtocolDecodeTest.testToDecimalProtocol" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ProtocolDecodeTest_testToDecimalProtocol - 2018.12.17 at 16h 16m 22s.xml">
+      <configuration name="ProtocolDecodeTest.testToDecimalProtocol" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ProtocolDecodeTest_testToDecimalProtocol - 2018.12.17 at 16h 16m 45s.xml">
+      <configuration name="ProtocolDecodeTest.testToDecimalProtocol" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ProtocolDecodeTest_testToDecimalProtocol - 2018.12.17 at 16h 17m 07s.xml">
+      <configuration name="ProtocolDecodeTest.testToDecimalProtocol" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ProtocolDecodeTest_testParseProtocol - 2018.12.17 at 16h 27m 46s.xml">
+      <configuration name="ProtocolDecodeTest.testParseProtocol" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ProtocolDecodeTest_testParseProtocol - 2018.12.17 at 16h 30m 03s.xml">
+      <configuration name="ProtocolDecodeTest.testParseProtocol" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11446000" />
+    <option name="totallyTimeSpent" value="13521000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -516,7 +547,7 @@
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info anchor="bottom" id="Statistic" order="7" />
+      <window_info anchor="bottom" id="Statistic" order="7" weight="0.3293944" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -528,11 +559,12 @@
       <window_info id="Image Layers" order="2" />
       <window_info anchor="bottom" id="Java Enterprise" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3293944" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3293944" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.3293944" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2537112" />
       <window_info id="Web" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3293944" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -540,7 +572,6 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3293944" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -548,6 +579,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add local jar" />
+    <option name="LAST_COMMIT_MESSAGE" value="add local jar" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/pom.xml">
@@ -611,12 +646,12 @@
         <state relative-caret-position="231">
           <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
           <folding>
-            <element signature="e#1273#1274#0" expanded="true" />
-            <element signature="e#1314#1315#0" expanded="true" />
-            <element signature="e#1422#1423#0" expanded="true" />
-            <element signature="e#1462#1463#0" expanded="true" />
-            <element signature="e#1570#1571#0" expanded="true" />
-            <element signature="e#1610#1611#0" expanded="true" />
+            <element signature="e#2655#2656#0" expanded="true" />
+            <element signature="e#2696#2697#0" expanded="true" />
+            <element signature="e#2804#2805#0" expanded="true" />
+            <element signature="e#2844#2845#0" expanded="true" />
+            <element signature="e#2952#2953#0" expanded="true" />
+            <element signature="e#2992#2993#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -642,53 +677,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/air/protocol/ProtocolDecode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1400">
-          <caret line="68" selection-start-line="68" selection-end-line="68" />
-          <folding>
-            <element signature="e#1273#1274#0" expanded="true" />
-            <element signature="e#1314#1315#0" expanded="true" />
-            <element signature="e#1422#1423#0" expanded="true" />
-            <element signature="e#1462#1463#0" expanded="true" />
-            <element signature="e#1570#1571#0" expanded="true" />
-            <element signature="e#1610#1611#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/ten/air/protocol/ProtocolGeneratorTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
           <caret line="16" column="3" selection-start-line="16" selection-start-column="3" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/air/protocol/bean/AirRecord.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="66" column="18" selection-start-line="66" selection-start-column="18" selection-end-line="66" selection-end-column="18" />
-          <folding>
-            <element signature="e#1454#1455#0" expanded="true" />
-            <element signature="e#1483#1484#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/ten/air/protocol/ProtocolDecodeTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="439">
-          <caret line="56" column="4" selection-start-line="31" selection-start-column="7" selection-end-line="56" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/air/protocol/ProtocolEncode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="26" column="25" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -699,20 +691,63 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-315">
+          <caret line="12" column="23" lean-forward="true" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/air/protocol/ProtocolEncode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="26" column="25" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/air/protocol/bean/AirRecord.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1029">
+          <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
+          <folding>
+            <element signature="e#1454#1455#0" expanded="true" />
+            <element signature="e#1483#1484#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="252">
-            <caret line="12" selection-start-line="12" selection-end-line="12" />
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="-654">
+            <caret line="22" column="22" lean-forward="true" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/ten/air/protocol/ProtocolDecodeTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-315">
-          <caret line="12" column="23" lean-forward="true" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+        <state relative-caret-position="924">
+          <caret line="44" column="34" lean-forward="true" selection-start-line="44" selection-start-column="34" selection-end-line="44" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/air/protocol/ProtocolDecode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="16" column="41" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="41" />
+          <folding>
+            <element signature="e#2655#2656#0" expanded="true" />
+            <element signature="e#2696#2697#0" expanded="true" />
+            <element signature="e#2804#2805#0" expanded="true" />
+            <element signature="e#2844#2845#0" expanded="true" />
+            <element signature="e#2952#2953#0" expanded="true" />
+            <element signature="e#2992#2993#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -799,7 +834,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.38919514" />
               </list>
             </option>
           </splitter-proportions>

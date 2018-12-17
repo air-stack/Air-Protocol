@@ -6,13 +6,53 @@ import com.ten.air.protocol.bean.AirRecord;
  * Protocol 解码工具 Hex->String
  */
 public class ProtocolDecode {
+    /**
+     * 协议字符串长度
+     */
+    private static final int DATA_LENGTH = 72;
 
     /**
-     * 将十六进制的数据属性转换为十进制的数据属性
+     * 解析协议字符串，返回记录数据对象
+     */
+    public static AirRecord parseProtocol(String protocol) {
+        AirRecord airRecord = new AirRecord();
+
+        // 长度校验
+        if (protocol.length() < DATA_LENGTH) {
+            System.out.println("长度校验失败 :" + protocol.length());
+            return null;
+        }
+
+        // 地址码 (11-25)字节
+        String imei = protocol.substring(20, 50);
+        // 数据来源 (26)字节
+        String source = protocol.substring(50, 52);
+        // 数据1 温度 (27-28)字节
+        String temperature = protocol.substring(52, 56);
+        // 数据2 PM25 (29-30)字节
+        String pm25 = protocol.substring(56, 60);
+        // 数据3 CO2 (31-32)字节
+        String co2 = protocol.substring(60, 64);
+        // 数据4 SO2 (33-34)字节
+        String so2 = protocol.substring(64, 68);
+
+        airRecord.setImei(imei);
+        airRecord.setSource(source);
+        airRecord.setTemperature(temperature);
+        airRecord.setPm25(pm25);
+        airRecord.setCo2(co2);
+        airRecord.setSo2(so2);
+
+        // 转换十六进制为十进制数据
+        return toDecimalProtocol(airRecord);
+    }
+
+    /**
+     * 将十六进制的数据属性转换为十进制的数据属性 Decimal
      *
      * @param airRecord 应传入[temperature, pm25, co2, so2]
      */
-    public static AirRecord parseProtocol(AirRecord airRecord) {
+    static AirRecord toDecimalProtocol(AirRecord airRecord) {
         airRecord.setTemperature(parseTemp(airRecord.getTemperature()));
         airRecord.setPm25(parsePm25(airRecord.getPm25()));
         airRecord.setCo2(parseCo2(airRecord.getCo2()));
