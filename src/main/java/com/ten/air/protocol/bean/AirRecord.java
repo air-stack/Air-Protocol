@@ -1,4 +1,4 @@
-package com.ten.air.back.entity;
+package com.ten.air.protocol.bean;
 
 /**
  * Atmospheric monitoring record 大气监测记录
