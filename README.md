@@ -1,16 +1,22 @@
 # Air Protocol
 
-> Protocol code util for Air. Air协议编解码工具. 
+> Protocol codec tool for Air. Air协议编解码工具. 
 
-## 功能
+### 功能
 
 * Air协议编码
 * Air协议解码
 * 产生模拟数据
 
-## Maven引用
+### jar打包
 
+File -> project structure -> Artifacts -> 点击"+"选择jar，然后选择"from modules with dependencies -> "extract to the target JAR"
 
+完成后，点击OK，Apply等按钮，回到IDEA的主菜单，选择“Build - Build Artifacts”下的“Build”或者“Rebuild”即可生成最终的可运行的jar，在\out\artifacts\xxxx_jar下面找到生成的目标jar。
+
+### 引用
+
+File -> project structure -> Libraries -> 添加本地jar包，即可使用。
 
 ## 编码十六进制协议
 

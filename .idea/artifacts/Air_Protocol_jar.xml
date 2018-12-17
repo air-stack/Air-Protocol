@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Air-Protocol:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Air_Protocol_jar</output-path>
+    <root id="archive" name="Air-Protocol.jar">
+      <element id="module-output" name="Air-Protocol" />
+    </root>
+  </artifact>
+</component>
