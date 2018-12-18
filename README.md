@@ -1,6 +1,6 @@
 # Air Protocol
 
-> Protocol codec tool for Air. Air协议编解码工具. 
+> 定义十六进制协议和数据实体对象，提供十六进制字符串和实体对象之间的转换工具，其他服务基于第三方Protocol服务进行协议编解码。
 
 ### 功能
 
