@@ -1,6 +1,9 @@
 package com.ten.air.protocol;
 
 import com.ten.air.protocol.bean.AirRecord;
+import com.ten.air.protocol.dht11.DHT11DataType;
+import com.ten.air.protocol.gp2y.GP2YDataType;
+import com.ten.air.protocol.gp2y.GP2YDataUtil;
 
 /**
  * Protocol 编码工具 String->Hex
@@ -19,10 +22,78 @@ public class ProtocolEncode {
     // 和校验 2字节
     private static final String CHECK = "0000";
 
+    // 真实数据来源
+    private static final String REAL_SOURCE = "00";
+    // 虚拟数据来源
+    private static final String VIRTUAL_SOURCE = "01";
+
+    // 填补空数据
+    private static final String NOTHING_DATA = "0000";
+
+
     /**
-     * 将十进制指标转为十六进制协议字符串
+     * 将DHT11模块发送的十进制指标转为十六进制协议字符串
      *
-     * @param airRecord 应传入[imei, source, temperature, pm25, co2, so2]
+     * @param dataType 应传入[imei, tempInt, tempDeci, humiInt, humiDeci]
+     */
+    public static String toHexProtocol(DHT11DataType dataType) {
+        StringBuilder protocol = new StringBuilder();
+
+        protocol.append(HEAD);
+        protocol.append(SIZE);
+        protocol.append(genHexTime());
+        protocol.append(FUNC);
+        protocol.append(toHexImei(dataType.getImei()));
+        protocol.append(REAL_SOURCE);
+        // 温度 2字节 双精度
+        protocol.append(toHexDecimalData(dataType.getTempInt(), dataType.getTempDeci()));
+        // 湿度 2字节 双精度
+        protocol.append(toHexDecimalData(dataType.getHumiInt(), dataType.getHumDeci()));
+        protocol.append(NOTHING_DATA);
+        protocol.append(NOTHING_DATA);
+        protocol.append(CHECK);
+
+        if (protocol.toString().length() != LENGTH) {
+            System.out.println("协议转换出错！");
+        }
+        return protocol.toString();
+    }
+
+
+    /**
+     * 将GP2Y模块发送的十进制指标转为十六进制协议字符串
+     *
+     * @param dataType 应传入[imei, voutH, voutL]
+     */
+    public static String toHexProtocol(GP2YDataType dataType) {
+        StringBuilder protocol = new StringBuilder();
+
+        protocol.append(HEAD);
+        protocol.append(SIZE);
+        protocol.append(genHexTime());
+        protocol.append(FUNC);
+        protocol.append(toHexImei(dataType.getImei()));
+        protocol.append(REAL_SOURCE);
+        protocol.append(NOTHING_DATA);
+        protocol.append(NOTHING_DATA);
+        // PM25浓度 2字节 双精度
+        protocol.append(toHexDecimalData(
+                GP2YDataUtil.calculateDensity(
+                        dataType.getVoutH(),
+                        dataType.getVoutL())));
+        protocol.append(NOTHING_DATA);
+        protocol.append(CHECK);
+
+        if (protocol.toString().length() != LENGTH) {
+            System.out.println("协议转换出错！");
+        }
+        return protocol.toString();
+    }
+
+    /**
+     * 将AirRecord的十进制指标转为十六进制协议字符串
+     *
+     * @param airRecord 应传入[imei, source, temperature, humidity, pm25, undefined]
      */
     public static String toHexProtocol(AirRecord airRecord) {
         StringBuilder protocol = new StringBuilder();
@@ -34,25 +105,21 @@ public class ProtocolEncode {
         protocol.append(toHexImei(airRecord.getImei()));
         protocol.append(toHexSource(airRecord.getSource()));
         protocol.append(toHexDecimalData(airRecord.getTemperature()));
+        protocol.append(toHexDecimalData(airRecord.getHumidity()));
         protocol.append(toHexIntegerData(airRecord.getPm25()));
-        protocol.append(toHexIntegerData(airRecord.getCo2()));
-        protocol.append(toHexIntegerData(airRecord.getSo2()));
+        protocol.append(toHexIntegerData(airRecord.getUndefinedData()));
         protocol.append(CHECK);
 
         if (protocol.toString().length() != LENGTH) {
             System.out.println("协议转换出错！");
         }
-
         return protocol.toString();
     }
 
     /* --------------------------------------------------------------------- */
 
-    // 模拟数据来源标记
-    private static final String SOURCE = "01";
-
     /**
-     * 根据模拟指标生成十六进制协议字符串
+     * FIXME 根据模拟指标生成十六进制协议字符串
      *
      * @param airIndex 应传入[temperature, pm25, co2, so2]
      */
@@ -64,17 +131,16 @@ public class ProtocolEncode {
         protocol.append(genHexTime());
         protocol.append(FUNC);
         protocol.append(toHexImei(imei));
-        protocol.append(toHexSource(SOURCE));
+        protocol.append(toHexSource(VIRTUAL_SOURCE));
         protocol.append(toHexDecimalData(airIndex.getTemperature()));
+        protocol.append(toHexDecimalData(airIndex.getHumi()));
         protocol.append(toHexIntegerData(airIndex.getPm25()));
-        protocol.append(toHexIntegerData(airIndex.getCo2()));
-        protocol.append(toHexIntegerData(airIndex.getSo2()));
+        protocol.append(toHexIntegerData(airIndex.getUndef()));
         protocol.append(CHECK);
 
         if (protocol.toString().length() != LENGTH) {
             System.out.println("协议转换出错！");
         }
-
         return protocol.toString();
     }
 
@@ -141,15 +207,34 @@ public class ProtocolEncode {
             return "0000";
         }
 
+        return getDoubleHexData(number[0], number[1]);
+    }
+
+    /**
+     * 带小数部分的数据 整数1Byte + 小数1Byte
+     */
+    private static String toHexDecimalData(String dataInt, String dataDeci) {
+        // 判断数据为空
+        if ("".equals(dataInt) || "".equals(dataDeci)) {
+            return "0000";
+        }
+
+        return getDoubleHexData(dataInt, dataDeci);
+    }
+
+    /**
+     * 转换为双精度2字节十六进制字符串 整数1Byte + 小数1Byte
+     */
+    private static String getDoubleHexData(String dataInt, String dataDeci) {
         // 进行数制转换
         try {
-            Integer integer = Integer.parseInt(number[0]);
+            Integer integer = Integer.parseInt(dataInt);
 
             // 小数部分精确到2位
-            if (number[1].length() > 2) {
-                number[1] = number[1].substring(0, 2);
+            if (dataDeci.length() > 2) {
+                dataDeci = dataDeci.substring(0, 2);
             }
-            Integer decimal = Integer.parseInt(number[1]);
+            Integer decimal = Integer.parseInt(dataDeci);
 
             String hexInteger = Integer.toHexString(integer);
             String hexDecimal = Integer.toHexString(decimal);

@@ -30,7 +30,7 @@ use case:
 
 String encode(AirRecord airRecord){
     // 获取记录对象，六个必需属性
-    AirRecord airRecord = [imei, source, temperature, pm25, co2, so2];
+    AirRecord airRecord = [imei, source, temperature, humi, humidity, undefinedData];
     // 将对象编码为十六机制协议字符串
     String protocol = ProtocolEncode.toHexProtocol(airRecord);
 }    

@@ -39,8 +39,8 @@ public class ProtocolEncodeTest {
         airRecord1.setSource("");
         airRecord1.setTemperature("");
         airRecord1.setPm25("");
-        airRecord1.setCo2("");
-        airRecord1.setSo2("");
+        airRecord1.setHumidity("");
+        airRecord1.setUndefinedData("");
 
         String protocol1 = ProtocolEncode.toHexProtocol(airRecord1);
         assertEquals(protocol1.length(), PROTOCOL_LENGTH);
@@ -51,8 +51,8 @@ public class ProtocolEncodeTest {
         airRecord2.setSource("324a");
         airRecord2.setTemperature("GGEE");
         airRecord2.setPm25("ZZYY");
-        airRecord2.setCo2("2G5N");
-        airRecord2.setSo2(".0A,");
+        airRecord2.setHumidity("2G5N");
+        airRecord2.setUndefinedData(".0A,");
 
         String protocol2 = ProtocolEncode.toHexProtocol(airRecord2);
         assertEquals(protocol2.length(), PROTOCOL_LENGTH);

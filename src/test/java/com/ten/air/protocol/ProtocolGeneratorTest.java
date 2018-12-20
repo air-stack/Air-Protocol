@@ -65,7 +65,7 @@ public class ProtocolGeneratorTest {
     }
 
     /**
-     * Method: getPm25()
+     * Method: getHumi()
      */
     @Test
     public void testGetPm25() throws Exception {
@@ -73,7 +73,7 @@ public class ProtocolGeneratorTest {
     }
 
     /**
-     * Method: setPm25(String pm25)
+     * Method: setHumi(String pm25)
      */
     @Test
     public void testSetPm25() throws Exception {
@@ -81,7 +81,7 @@ public class ProtocolGeneratorTest {
     }
 
     /**
-     * Method: getSo2()
+     * Method: getUndefinedData()
      */
     @Test
     public void testGetSo2() throws Exception {
@@ -89,7 +89,7 @@ public class ProtocolGeneratorTest {
     }
 
     /**
-     * Method: setSo2(String so2)
+     * Method: setUndefinedData(String so2)
      */
     @Test
     public void testSetSo2() throws Exception {
@@ -113,7 +113,7 @@ public class ProtocolGeneratorTest {
     }
 
     /**
-     * Method: getCo2()
+     * Method: getHumidity()
      */
     @Test
     public void testGetCo2() throws Exception {
@@ -121,7 +121,7 @@ public class ProtocolGeneratorTest {
     }
 
     /**
-     * Method: setCo2(String co2)
+     * Method: setHumidity(String co2)
      */
     @Test
     public void testSetCo2() throws Exception {

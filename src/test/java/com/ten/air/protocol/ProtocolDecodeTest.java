@@ -54,40 +54,40 @@ public class ProtocolDecodeTest {
         AirRecord airRecord1 = new AirRecord();
         airRecord1.setTemperature("");
         airRecord1.setPm25("");
-        airRecord1.setCo2("");
-        airRecord1.setSo2("");
+        airRecord1.setHumidity("");
+        airRecord1.setUndefinedData("");
 
         AirRecord protocol1 = ProtocolDecode.toDecimalProtocol(airRecord1);
         assertEquals(protocol1.getTemperature(), "xx.xx");
         assertEquals(protocol1.getPm25(), "x");
-        assertEquals(protocol1.getCo2(), "x");
-        assertEquals(protocol1.getSo2(), "x");
+        assertEquals(protocol1.getHumidity(), "xx.xx");
+        assertEquals(protocol1.getUndefinedData(), "x");
 
         // 测试数据非法字符
         AirRecord airRecord2 = new AirRecord();
         airRecord2.setTemperature("GGEE");
         airRecord2.setPm25("ZZYY");
-        airRecord2.setCo2("2G5N");
-        airRecord2.setSo2(".0A,");
+        airRecord2.setHumidity("2G5N");
+        airRecord2.setUndefinedData(".0A,");
 
         AirRecord protocol2 = ProtocolDecode.toDecimalProtocol(airRecord2);
         assertEquals(protocol2.getTemperature(), "xx.xx");
         assertEquals(protocol2.getPm25(), "x");
-        assertEquals(protocol2.getCo2(), "x");
-        assertEquals(protocol2.getSo2(), "x");
+        assertEquals(protocol2.getHumidity(), "xx.xx");
+        assertEquals(protocol2.getUndefinedData(), "x");
 
         // 测试正常数据
         AirRecord airRecord3 = new AirRecord();
         airRecord3.setTemperature("1122");
         airRecord3.setPm25("1111");
-        airRecord3.setCo2("1111");
-        airRecord3.setSo2("1111");
+        airRecord3.setHumidity("1122");
+        airRecord3.setUndefinedData("1111");
 
         AirRecord protocol3 = ProtocolDecode.toDecimalProtocol(airRecord3);
         assertEquals(protocol3.getTemperature(), "17.34");
         assertEquals(protocol3.getPm25(), "4369");
-        assertEquals(protocol3.getCo2(), "4369");
-        assertEquals(protocol3.getSo2(), "4369");
+        assertEquals(protocol3.getHumidity(), "17.34");
+        assertEquals(protocol3.getUndefinedData(), "4369");
     }
 
 

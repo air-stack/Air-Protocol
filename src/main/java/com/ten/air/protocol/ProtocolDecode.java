@@ -29,19 +29,19 @@ public class ProtocolDecode {
         String source = protocol.substring(50, 52);
         // 数据1 温度 (27-28)字节
         String temperature = protocol.substring(52, 56);
-        // 数据2 PM25 (29-30)字节
-        String pm25 = protocol.substring(56, 60);
-        // 数据3 CO2 (31-32)字节
-        String co2 = protocol.substring(60, 64);
-        // 数据4 SO2 (33-34)字节
-        String so2 = protocol.substring(64, 68);
+        // 数据2 湿度 (29-30)字节
+        String humi = protocol.substring(56, 60);
+        // 数据3 PM25 (31-32)字节
+        String pm25 = protocol.substring(60, 64);
+        // 数据4 未定义 (33-34)字节
+        String undef = protocol.substring(64, 68);
 
         airRecord.setImei(imei);
         airRecord.setSource(source);
         airRecord.setTemperature(temperature);
-        airRecord.setPm25(pm25);
-        airRecord.setCo2(co2);
-        airRecord.setSo2(so2);
+        airRecord.setHumidity(pm25);
+        airRecord.setPm25(humi);
+        airRecord.setUndefinedData(undef);
 
         // 转换十六进制为十进制数据
         return toDecimalProtocol(airRecord);
@@ -54,9 +54,9 @@ public class ProtocolDecode {
      */
     static AirRecord toDecimalProtocol(AirRecord airRecord) {
         airRecord.setTemperature(parseTemp(airRecord.getTemperature()));
+        airRecord.setHumidity(parseHumi(airRecord.getHumidity()));
         airRecord.setPm25(parsePm25(airRecord.getPm25()));
-        airRecord.setCo2(parseCo2(airRecord.getCo2()));
-        airRecord.setSo2(parseSo2(airRecord.getSo2()));
+        airRecord.setUndefinedData(parseUndef(airRecord.getUndefinedData()));
         return airRecord;
     }
 
@@ -67,9 +67,24 @@ public class ProtocolDecode {
      * 双精度 :0x19 0x02 -> 25.2℃
      */
     private static String parseTemp(String temp) {
-        if (temp.length() == 4) {
-            String integerHex = temp.substring(0, 2);
-            String decimalHex = temp.substring(2, 4);
+        return parseDoubleByteData(temp);
+    }
+
+    /**
+     * 解析湿度
+     * 双精度 :0x19 0x02 -> 25.2 %
+     */
+    private static String parseHumi(String humi) {
+        return parseDoubleByteData(humi);
+    }
+
+    /**
+     * 解析双精度数据
+     */
+    private static String parseDoubleByteData(String data) {
+        if (data.length() == 4) {
+            String integerHex = data.substring(0, 2);
+            String decimalHex = data.substring(2, 4);
             try {
                 String integer = String.valueOf(Integer.parseInt(integerHex, 16));
                 String decimal = String.valueOf(Integer.parseInt(decimalHex, 16));
@@ -83,6 +98,8 @@ public class ProtocolDecode {
         return "xx.xx";
     }
 
+    /* --------------------------------------------------------------------- */
+
     /**
      * 解析PM25
      * 单精度 :0x00 0xfa -> 250
@@ -91,22 +108,18 @@ public class ProtocolDecode {
         return parseInteger(pm25);
     }
 
-    /**
-     * 解析CO2
-     * 单精度 :0x00 0xfa -> 250
-     */
-    private static String parseCo2(String co2) {
-        return parseInteger(co2);
-    }
 
     /**
      * 解析SO2
      * 单精度 :0x00 0xfa -> 250
      */
-    private static String parseSo2(String so2) {
-        return parseInteger(so2);
+    private static String parseUndef(String undef) {
+        return parseInteger(undef);
     }
 
+    /**
+     * 解析单精度数据
+     */
     private static String parseInteger(String data) {
         if (data.length() < 1) {
             return "x";
