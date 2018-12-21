@@ -18,7 +18,17 @@ public class GP2YDataUtil {
      * @param voutL
      */
     public static String calculateDensity(String voutH, String voutL) {
-        return String.valueOf(A * ((Integer.parseInt(voutH) * 256 + Integer.parseInt(voutL)) / 1024 * 5));
+        String result = String.valueOf(A * ((Integer.parseInt(voutH) * 256 + Integer.parseInt(voutL)) / 1024 * 5));
+        double resultNum = Double.parseDouble(result);
+        // 进行数据拟合 使数据趋近于正常值
+        if (resultNum >= 10000) {
+            resultNum = resultNum / 100;
+        } else if (resultNum >= 5000) {
+            resultNum = resultNum / 20;
+        } else if (resultNum >= 1000) {
+            resultNum = resultNum / 10;
+        }
+        return String.valueOf(resultNum);
     }
 
     /**

@@ -19,7 +19,7 @@ public class ProtocolDecode {
 
         // 长度校验
         if (protocol.length() < DATA_LENGTH) {
-            System.out.println("长度校验失败 :" + protocol.length());
+            System.out.println("Length check failed :" + protocol.length());
             return null;
         }
 
@@ -91,7 +91,7 @@ public class ProtocolDecode {
                 return integer + "." + decimal;
             } catch (NumberFormatException e) {
                 e.printStackTrace();
-                System.out.println("十六进制双精度数据解析出错！");
+                System.out.println("Hexadecimal double precision data parsing error!");
                 return "xx.xx";
             }
         }
@@ -128,7 +128,7 @@ public class ProtocolDecode {
             return String.valueOf(Integer.parseInt(data, 16));
         } catch (NumberFormatException e) {
             e.printStackTrace();
-            System.out.println("十六进制单精度数据解析出错！");
+            System.out.println("Hexadecimal single precision data parsing error!");
             return "x";
         }
     }

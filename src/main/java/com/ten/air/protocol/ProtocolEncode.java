@@ -54,7 +54,7 @@ public class ProtocolEncode {
         protocol.append(CHECK);
 
         if (protocol.toString().length() != LENGTH) {
-            System.out.println("协议转换出错！");
+            System.out.println("Protocol conversion error!");
         }
         return protocol.toString();
     }
@@ -85,7 +85,7 @@ public class ProtocolEncode {
         protocol.append(CHECK);
 
         if (protocol.toString().length() != LENGTH) {
-            System.out.println("协议转换出错！");
+            System.out.println("Protocol conversion error!");
         }
         return protocol.toString();
     }
@@ -111,7 +111,7 @@ public class ProtocolEncode {
         protocol.append(CHECK);
 
         if (protocol.toString().length() != LENGTH) {
-            System.out.println("协议转换出错！");
+            System.out.println("Protocol conversion error!");
         }
         return protocol.toString();
     }
@@ -139,7 +139,7 @@ public class ProtocolEncode {
         protocol.append(CHECK);
 
         if (protocol.toString().length() != LENGTH) {
-            System.out.println("协议转换出错！");
+            System.out.println("Protocol conversion error!");
         }
         return protocol.toString();
     }
@@ -191,7 +191,7 @@ public class ProtocolEncode {
             return fillData(hexInteger, 4);
         } catch (NumberFormatException e) {
             e.printStackTrace();
-            System.out.println("单精度十六进制数据转换失败");
+            System.out.println("Single precision hexadecimal data conversion failed");
             return "XXXX";
         }
     }
@@ -246,7 +246,7 @@ public class ProtocolEncode {
             return hexInteger + hexDecimal;
         } catch (NumberFormatException e) {
             e.printStackTrace();
-            System.out.println("双精度十六进制数据转换失败");
+            System.out.println("Double precision hexadecimal data conversion failed");
             return "XXXX";
         }
     }
