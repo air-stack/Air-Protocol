@@ -25,7 +25,7 @@ public class DHT11DataType {
     /**
      * 湿度小数
      */
-    private String humDeci;
+    private String humiDeci;
 
     @Override
     public String toString() {
@@ -34,7 +34,7 @@ public class DHT11DataType {
                 ", tempInt='" + tempInt + '\'' +
                 ", tempDeci='" + tempDeci + '\'' +
                 ", humiInt='" + humiInt + '\'' +
-                ", humDeci='" + humDeci + '\'' +
+                ", humiDeci='" + humiDeci + '\'' +
                 '}';
     }
 
@@ -70,11 +70,11 @@ public class DHT11DataType {
         this.humiInt = humiInt;
     }
 
-    public String getHumDeci() {
-        return humDeci;
+    public String getHumiDeci() {
+        return humiDeci;
     }
 
-    public void setHumDeci(String humDeci) {
-        this.humDeci = humDeci;
+    public void setHumiDeci(String humiDeci) {
+        this.humiDeci = humiDeci;
     }
 }

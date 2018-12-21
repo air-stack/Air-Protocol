@@ -48,7 +48,7 @@ public class ProtocolEncode {
         // 温度 2字节 双精度
         protocol.append(toHexDecimalData(dataType.getTempInt(), dataType.getTempDeci()));
         // 湿度 2字节 双精度
-        protocol.append(toHexDecimalData(dataType.getHumiInt(), dataType.getHumDeci()));
+        protocol.append(toHexDecimalData(dataType.getHumiInt(), dataType.getHumiDeci()));
         protocol.append(NOTHING_DATA);
         protocol.append(NOTHING_DATA);
         protocol.append(CHECK);

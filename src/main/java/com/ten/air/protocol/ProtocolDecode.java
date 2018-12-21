@@ -39,8 +39,8 @@ public class ProtocolDecode {
         airRecord.setImei(imei);
         airRecord.setSource(source);
         airRecord.setTemperature(temperature);
-        airRecord.setHumidity(pm25);
-        airRecord.setPm25(humi);
+        airRecord.setHumidity(humi);
+        airRecord.setPm25(pm25);
         airRecord.setUndefinedData(undef);
 
         // 转换十六进制为十进制数据
