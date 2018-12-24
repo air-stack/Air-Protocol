@@ -76,8 +76,8 @@ public class ProtocolEncode {
         protocol.append(REAL_SOURCE);
         protocol.append(NOTHING_DATA);
         protocol.append(NOTHING_DATA);
-        // PM25浓度 2字节 双精度
-        protocol.append(toHexDecimalData(
+        // PM25浓度 2字节 单精度
+        protocol.append(toHexIntegerData(
                 GP2YDataUtil.calculateDensity(
                         dataType.getVoutH(),
                         dataType.getVoutL())));

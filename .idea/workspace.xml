@@ -7,8 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="de561078-d416-428c-bb7f-cd08cfde95f6" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ten/air/protocol/ProtocolDecode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ten/air/protocol/ProtocolDecode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ten/air/protocol/ProtocolEncode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ten/air/protocol/ProtocolEncode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ten/air/protocol/gp2y/GP2YDataUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ten/air/protocol/gp2y/GP2YDataUtil.java" afterDir="false" />
     </list>
@@ -23,33 +23,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="ProtocolGenerator.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/air/protocol/ProtocolGenerator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1054">
-              <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ProtocolDecode.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/air/protocol/ProtocolDecode.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="130" column="80" selection-start-line="130" selection-start-column="80" selection-end-line="130" selection-end-column="80" />
+            <state relative-caret-position="375">
+              <caret line="114" column="7" selection-start-line="114" selection-start-column="7" selection-end-line="114" selection-end-column="7" />
               <folding>
-                <element signature="e#1993#1994#0" expanded="true" />
-                <element signature="e#2041#2042#0" expanded="true" />
+                <element signature="e#3132#3133#0" expanded="true" />
+                <element signature="e#3173#3174#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProtocolEncode.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ProtocolEncode.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/air/protocol/ProtocolEncode.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="371">
-              <caret line="268" column="26" lean-forward="true" selection-start-line="268" selection-start-column="26" selection-end-line="268" selection-end-column="26" />
+            <state relative-caret-position="-189">
+              <caret line="78" column="25" lean-forward="true" selection-start-line="78" selection-start-column="25" selection-end-line="78" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -60,9 +51,10 @@
       <file leaf-file-name="GP2YDataType.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/air/protocol/gp2y/GP2YDataType.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="77">
-              <caret line="35" column="29" selection-start-line="35" selection-start-column="29" selection-end-line="35" selection-end-column="29" />
+            <state relative-caret-position="294">
+              <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
               <folding>
+                <element signature="e#823#824#0" expanded="true" />
                 <element signature="e#850#851#0" expanded="true" />
                 <element signature="e#890#891#0" expanded="true" />
                 <element signature="e#922#923#0" expanded="true" />
@@ -71,11 +63,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GP2YDataUtil.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="GP2YDataUtil.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/air/protocol/gp2y/GP2YDataUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="16" column="19" lean-forward="true" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
+            <state relative-caret-position="273">
+              <caret line="22" column="40" lean-forward="true" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GP2YDataUtilTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/ten/air/protocol/gp2y/GP2YDataUtilTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="224">
+              <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
             </state>
           </provider>
         </entry>
@@ -83,7 +84,7 @@
       <file leaf-file-name="ProtocolDecodeTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/ten/air/protocol/ProtocolDecodeTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1848">
+            <state relative-caret-position="258">
               <caret line="88" column="52" selection-start-line="88" selection-start-column="52" selection-end-line="88" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -95,8 +96,30 @@
       <file leaf-file-name="DHT11DataType.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/air/protocol/dht11/DHT11DataType.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-532">
-              <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+            <state relative-caret-position="693">
+              <caret line="33" column="12" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="12" />
+              <folding>
+                <element signature="e#772#773#0" expanded="true" />
+                <element signature="e#799#800#0" expanded="true" />
+                <element signature="e#839#840#0" expanded="true" />
+                <element signature="e#871#872#0" expanded="true" />
+                <element signature="e#905#906#0" expanded="true" />
+                <element signature="e#935#936#0" expanded="true" />
+                <element signature="e#981#982#0" expanded="true" />
+                <element signature="e#1019#1020#0" expanded="true" />
+                <element signature="e#1054#1055#0" expanded="true" />
+                <element signature="e#1085#1086#0" expanded="true" />
+                <element signature="e#1133#1134#0" expanded="true" />
+                <element signature="e#1173#1174#0" expanded="true" />
+                <element signature="e#1207#1208#0" expanded="true" />
+                <element signature="e#1237#1238#0" expanded="true" />
+                <element signature="e#1283#1284#0" expanded="true" />
+                <element signature="e#1321#1322#0" expanded="true" />
+                <element signature="e#1356#1357#0" expanded="true" />
+                <element signature="e#1387#1388#0" expanded="true" />
+                <element signature="e#1435#1436#0" expanded="true" />
+                <element signature="e#1475#1476#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -104,20 +127,26 @@
       <file leaf-file-name="AirRecord.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/air/protocol/bean/AirRecord.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
+            <state relative-caret-position="168">
               <caret line="50" column="20" selection-start-line="50" selection-start-column="20" selection-end-line="50" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="FIRST">
-              <first_editor relative-caret-position="42">
-                <caret line="2" column="2" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
-              </first_editor>
-              <second_editor />
+      <file leaf-file-name="ProtocolEncodeTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/ten/air/protocol/ProtocolEncodeTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="840">
+              <caret line="45" selection-start-line="45" selection-end-line="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProtocolGeneratorTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/ten/air/protocol/ProtocolGeneratorTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="41" column="25" selection-start-line="41" selection-start-column="25" selection-end-line="41" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -154,7 +183,6 @@
         <option value="$PROJECT_DIR$/src/test/java/com/ten/air/protocol/ProtocolGeneratorTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/ten/air/protocol/ProtocolEncodeTest.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/main/java/com/ten/air/protocol/bean/TemperatureAndHumidity.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ten/air/protocol/bean/DHT11SensorTempAndHumi.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ten/air/protocol/bean/GP2YSensorDustPm25.java" />
@@ -163,11 +191,13 @@
         <option value="$PROJECT_DIR$/src/main/java/com/ten/air/protocol/gp2y/GP2YDataType.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ten/air/protocol/ProtocolGenerator.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/ten/air/protocol/ProtocolDecodeTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ten/air/protocol/dht11/DHT11DataType.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ten/air/protocol/bean/AirRecord.sql" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ten/air/protocol/ProtocolEncode.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ten/air/protocol/ProtocolDecode.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ten/air/protocol/dht11/DHT11DataType.java" />
+        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/main/java/com/ten/air/protocol/gp2y/GP2YDataUtil.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/ten/air/protocol/gp2y/GP2YDataUtilTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ten/air/protocol/ProtocolEncode.java" />
       </list>
     </option>
   </component>
@@ -190,9 +220,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="950" />
-    <option name="width" value="980" />
-    <option name="height" value="1040" />
+    <option name="x" value="952" />
+    <option name="width" value="977" />
+    <option name="height" value="1038" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -202,9 +232,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -269,13 +298,6 @@
               <item name="Air-Protocol" type="b2602c69:ProjectViewProjectNode" />
               <item name="Air-Protocol" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Air-Protocol" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Air-Protocol" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -293,16 +315,26 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="protocol" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Air-Protocol" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Air-Protocol" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="protocol" type="462c0819:PsiDirectoryNode" />
+              <item name="gp2y" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Air-Back" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Artifacts" />
@@ -311,12 +343,14 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.ten.air.protocol.gp2y" />
       <recent name="com.ten.air.protocol" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.ten.air.protocol.bean" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Air\Air-Protocol" />
       <recent name="D:\Air\Air-Protocol\src\main\resources" />
     </key>
   </component>
@@ -332,9 +366,32 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.com.ten.air.protocol in Air-Protocol">
+  <component name="RunManager" selected="JUnit.GP2YDataUtilTest.testCalculateDensity">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="GP2YDataUtilTest.testCalculateDensity" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Air-Protocol" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ten.air.protocol.gp2y.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.ten.air.protocol.gp2y" />
+      <option name="MAIN_CLASS_NAME" value="com.ten.air.protocol.gp2y.GP2YDataUtilTest" />
+      <option name="METHOD_NAME" value="testCalculateDensity" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
     </configuration>
     <configuration name="ProtocolDecodeTest.testParseProtocol" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Air-Protocol" />
@@ -372,29 +429,6 @@
       <option name="PACKAGE_NAME" value="com.ten.air.protocol" />
       <option name="MAIN_CLASS_NAME" value="com.ten.air.protocol.ProtocolDecodeTest" />
       <option name="METHOD_NAME" value="testToDecimalProtocol" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="ProtocolEncodeTest.testToHexProtocol" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Air-Protocol" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ten.air.protocol.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.ten.air.protocol" />
-      <option name="MAIN_CLASS_NAME" value="com.ten.air.protocol.ProtocolEncodeTest" />
-      <option name="METHOD_NAME" value="testToHexProtocol" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -492,17 +526,17 @@
     <list>
       <item itemvalue="JUnit.ProtocolGeneratorTest.testGenMockProtocol" />
       <item itemvalue="JUnit.ProtocolDecodeTest.testParseProtocol" />
-      <item itemvalue="JUnit.ProtocolEncodeTest.testToHexProtocol" />
       <item itemvalue="JUnit.ProtocolDecodeTest.testToDecimalProtocol" />
       <item itemvalue="JUnit.com.ten.air.protocol in Air-Protocol" />
+      <item itemvalue="JUnit.GP2YDataUtilTest.testCalculateDensity" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.GP2YDataUtilTest.testCalculateDensity" />
+        <item itemvalue="JUnit.ProtocolGeneratorTest.testGenMockProtocol" />
         <item itemvalue="JUnit.com.ten.air.protocol in Air-Protocol" />
         <item itemvalue="JUnit.ProtocolDecodeTest.testParseProtocol" />
         <item itemvalue="JUnit.ProtocolDecodeTest.testToDecimalProtocol" />
-        <item itemvalue="JUnit.ProtocolEncodeTest.testToHexProtocol" />
-        <item itemvalue="JUnit.ProtocolGeneratorTest.testGenMockProtocol" />
       </list>
     </recent_temporary>
   </component>
@@ -526,7 +560,9 @@
       <workItem from="1545360634058" duration="2559000" />
       <workItem from="1545364803371" duration="2352000" />
       <workItem from="1545392591351" duration="4000" />
-      <workItem from="1545392899714" duration="586000" />
+      <workItem from="1545392899714" duration="1129000" />
+      <workItem from="1545394059013" duration="613000" />
+      <workItem from="1545614068935" duration="3784000" />
     </task>
     <task id="LOCAL-00001" summary="add local jar">
       <created>1545033681242</created>
@@ -563,72 +599,87 @@
       <option name="project" value="LOCAL" />
       <updated>1545377177269</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="-中文乱码转为英语编码&#10;-增加PM25计算结果拟合">
+      <created>1545393524771</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1545393524771</updated>
+    </task>
+    <task id="LOCAL-00007" summary="-update readme">
+      <created>1545394018196</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1545394018196</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ProtocolEncodeTest_testToHexProtocol - 2018.12.17 at 15h 40m 05s.xml">
-      <configuration name="ProtocolEncodeTest.testToHexProtocol" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ProtocolDecodeTest_testToDecimalProtocol - 2018.12.17 at 16h 15m 18s.xml">
-      <configuration name="ProtocolDecodeTest.testToDecimalProtocol" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ProtocolDecodeTest_testToDecimalProtocol - 2018.12.17 at 16h 16m 22s.xml">
-      <configuration name="ProtocolDecodeTest.testToDecimalProtocol" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ProtocolDecodeTest_testToDecimalProtocol - 2018.12.17 at 16h 16m 45s.xml">
-      <configuration name="ProtocolDecodeTest.testToDecimalProtocol" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ProtocolDecodeTest_testToDecimalProtocol - 2018.12.17 at 16h 17m 07s.xml">
-      <configuration name="ProtocolDecodeTest.testToDecimalProtocol" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ProtocolDecodeTest_testParseProtocol - 2018.12.17 at 16h 27m 46s.xml">
-      <configuration name="ProtocolDecodeTest.testParseProtocol" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ProtocolDecodeTest_testParseProtocol - 2018.12.17 at 16h 30m 03s.xml">
-      <configuration name="ProtocolDecodeTest.testParseProtocol" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="com_ten_air_protocol_in_Air-Protocol - 2018.12.17 at 16h 35m 25s.xml">
-      <configuration name="com.ten.air.protocol in Air-Protocol" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="com_ten_air_protocol_in_Air-Protocol - 2018.12.21 at 00h 49m 32s.xml">
-      <configuration name="com.ten.air.protocol in Air-Protocol" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="com_ten_air_protocol_in_Air-Protocol - 2018.12.21 at 00h 50m 51s.xml">
       <configuration name="com.ten.air.protocol in Air-Protocol" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="ProtocolGeneratorTest_testGenMockProtocol - 2018.12.21 at 20h 07m 53s.xml">
+      <configuration name="ProtocolGeneratorTest.testGenMockProtocol" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GP2YDataUtilTest_testCalculateDensity - 2018.12.24 at 08h 48m 50s.xml">
+      <configuration name="GP2YDataUtilTest.testCalculateDensity" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GP2YDataUtilTest_testCalculateDensity - 2018.12.24 at 08h 51m 49s.xml">
+      <configuration name="GP2YDataUtilTest.testCalculateDensity" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GP2YDataUtilTest_testCalculateDensity - 2018.12.24 at 08h 52m 39s.xml">
+      <configuration name="GP2YDataUtilTest.testCalculateDensity" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GP2YDataUtilTest_testCalculateDensity - 2018.12.24 at 08h 53m 19s.xml">
+      <configuration name="GP2YDataUtilTest.testCalculateDensity" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GP2YDataUtilTest_testCalculateDensity - 2018.12.24 at 08h 54m 48s.xml">
+      <configuration name="GP2YDataUtilTest.testCalculateDensity" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GP2YDataUtilTest_testCalculateDensity - 2018.12.24 at 08h 55m 02s.xml">
+      <configuration name="GP2YDataUtilTest.testCalculateDensity" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GP2YDataUtilTest_testCalculateDensity - 2018.12.24 at 08h 55m 48s.xml">
+      <configuration name="GP2YDataUtilTest.testCalculateDensity" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GP2YDataUtilTest_testCalculateDensity - 2018.12.24 at 08h 55m 55s.xml">
+      <configuration name="GP2YDataUtilTest.testCalculateDensity" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31685000" />
+    <option name="totallyTimeSpent" value="36625000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="3" />
-      <window_info id="Image Layers" order="2" />
-      <window_info anchor="bottom" id="Java Enterprise" order="7" />
-      <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5006748" side_tool="true" weight="0.3293944" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3293944" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3293944" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2948718" />
       <window_info anchor="bottom" id="Statistic" order="7" weight="0.3293944" />
-      <window_info id="Web" order="2" side_tool="true" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.3293944" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info id="Image Layers" order="2" />
+      <window_info anchor="bottom" id="Java Enterprise" order="7" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49932525" weight="0.3293944" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3293944" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30499324" />
+      <window_info id="Web" order="2" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.3293944" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -649,16 +700,11 @@
     <MESSAGE value="update readme" />
     <MESSAGE value="-新增DHT11模块对应数据结构与GP2Y模块对应数据结构&#10;-新增相应编解码功能&#10;-测试通过" />
     <MESSAGE value="-修复新增编解码方法的BUG" />
-    <option name="LAST_COMMIT_MESSAGE" value="-修复新增编解码方法的BUG" />
+    <MESSAGE value="-中文乱码转为英语编码&#10;-增加PM25计算结果拟合" />
+    <MESSAGE value="-update readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="-update readme" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/ten/air/protocol/ProtocolGeneratorTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="903">
-          <caret line="47" column="31" selection-start-line="47" selection-start-column="31" selection-end-line="47" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/air/protocol/ProtocolDecode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -946,6 +992,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/air/protocol/bean/AirRecord.sql" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/air/protocol/ProtocolGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="1512">
+            <caret line="72" column="3" selection-start-line="72" selection-start-column="3" selection-end-line="72" selection-end-column="3" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/ten/air/protocol/ProtocolEncodeTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="840">
@@ -955,14 +1019,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/ten/air/protocol/ProtocolGeneratorTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="903">
-          <caret line="47" column="31" selection-start-line="47" selection-start-column="31" selection-end-line="47" selection-end-column="31" />
+        <state relative-caret-position="195">
+          <caret line="41" column="25" selection-start-line="41" selection-start-column="25" selection-end-line="41" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/ten/air/protocol/ProtocolDecodeTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1848">
+        <state relative-caret-position="258">
           <caret line="88" column="52" selection-start-line="88" selection-start-column="52" selection-end-line="88" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -970,36 +1034,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="42">
-            <caret line="2" column="2" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/air/protocol/bean/AirRecord.sql" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/air/protocol/bean/AirRecord.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
+        <state relative-caret-position="168">
           <caret line="50" column="20" selection-start-line="50" selection-start-column="20" selection-end-line="50" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/air/protocol/dht11/DHT11DataType.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-532">
-          <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+        <state relative-caret-position="693">
+          <caret line="33" column="12" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="12" />
+          <folding>
+            <element signature="e#772#773#0" expanded="true" />
+            <element signature="e#799#800#0" expanded="true" />
+            <element signature="e#839#840#0" expanded="true" />
+            <element signature="e#871#872#0" expanded="true" />
+            <element signature="e#905#906#0" expanded="true" />
+            <element signature="e#935#936#0" expanded="true" />
+            <element signature="e#981#982#0" expanded="true" />
+            <element signature="e#1019#1020#0" expanded="true" />
+            <element signature="e#1054#1055#0" expanded="true" />
+            <element signature="e#1085#1086#0" expanded="true" />
+            <element signature="e#1133#1134#0" expanded="true" />
+            <element signature="e#1173#1174#0" expanded="true" />
+            <element signature="e#1207#1208#0" expanded="true" />
+            <element signature="e#1237#1238#0" expanded="true" />
+            <element signature="e#1283#1284#0" expanded="true" />
+            <element signature="e#1321#1322#0" expanded="true" />
+            <element signature="e#1356#1357#0" expanded="true" />
+            <element signature="e#1387#1388#0" expanded="true" />
+            <element signature="e#1435#1436#0" expanded="true" />
+            <element signature="e#1475#1476#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/air/protocol/gp2y/GP2YDataType.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="77">
-          <caret line="35" column="29" selection-start-line="35" selection-start-column="29" selection-end-line="35" selection-end-column="29" />
+        <state relative-caret-position="294">
+          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
           <folding>
+            <element signature="e#823#824#0" expanded="true" />
             <element signature="e#850#851#0" expanded="true" />
             <element signature="e#890#891#0" expanded="true" />
             <element signature="e#922#923#0" expanded="true" />
@@ -1007,38 +1083,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/air/protocol/ProtocolGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1054">
-          <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/air/protocol/ProtocolDecode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="130" column="80" selection-start-line="130" selection-start-column="80" selection-end-line="130" selection-end-column="80" />
+        <state relative-caret-position="375">
+          <caret line="114" column="7" selection-start-line="114" selection-start-column="7" selection-end-line="114" selection-end-column="7" />
           <folding>
-            <element signature="e#1993#1994#0" expanded="true" />
-            <element signature="e#2041#2042#0" expanded="true" />
+            <element signature="e#3132#3133#0" expanded="true" />
+            <element signature="e#3173#3174#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/air/protocol/gp2y/GP2YDataUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="16" column="19" lean-forward="true" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/air/protocol/ProtocolEncode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="268" column="26" lean-forward="true" selection-start-line="268" selection-start-column="26" selection-end-line="268" selection-end-column="26" />
+        <state relative-caret-position="-189">
+          <caret line="78" column="25" lean-forward="true" selection-start-line="78" selection-start-column="25" selection-end-line="78" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/ten/air/protocol/gp2y/GP2YDataUtilTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/air/protocol/gp2y/GP2YDataUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="22" column="40" lean-forward="true" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
         </state>
       </provider>
     </entry>
