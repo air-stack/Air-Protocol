@@ -39,14 +39,16 @@ public class ProtocolGenerator {
             AirIndex airIndex = new AirIndex();
 
             String temperature = String.valueOf(Math.random() > 0.5f ? BASE_TEMPERATURE + Math.random() * 10 : BASE_TEMPERATURE - Math.random() * 10);
-            String humi = String.valueOf(Math.random() > 0.5f ? BASE_PM25 + Math.random() * 5 : BASE_PM25 - Math.random() * 5);
-            String pm25 = String.valueOf(Math.random() > 0.5f ? BASE_HUMI + Math.random() * 100 : BASE_HUMI - Math.random() * 100);
+            String humi = String.valueOf(Math.random() > 0.5f ? BASE_HUMI + Math.random() * 5 : BASE_HUMI - Math.random() * 5);
+            String pm25 = String.valueOf(Math.random() > 0.5f ? BASE_PM25 + Math.random() * 100 : BASE_PM25 - Math.random() * 100);
             String undef = String.valueOf(Math.random() > 0.5f ? BASE_UNDEF + Math.random() * 100 : BASE_UNDEF - Math.random() * 100);
 
             airIndex.setTemperature(temperature);
             airIndex.setHumi(humi);
             airIndex.setPm25(pm25);
             airIndex.setUndef(undef);
+
+//            System.out.println(airIndex);
 
             return airIndex;
         }

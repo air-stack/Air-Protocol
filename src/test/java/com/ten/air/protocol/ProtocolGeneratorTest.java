@@ -39,12 +39,13 @@ public class ProtocolGeneratorTest {
 
         // 测试IMEI过长
         String imei2 = "112233445566778899AABBCCDDEEFFGGHH";
-        String protocol2 = ProtocolGenerator.genMockProtocol(imei1);
+        String protocol2 = ProtocolGenerator.genMockProtocol(imei2);
         assertEquals(protocol2.length(), PROTOCOL_LENGTH);
+//        System.out.println(protocol2);
 
         // 测试IMEI非法字符
         String imei3 = "QQWWEERRTTYYUU";
-        String protocol3 = ProtocolGenerator.genMockProtocol(imei1);
+        String protocol3 = ProtocolGenerator.genMockProtocol(imei3);
         assertEquals(protocol3.length(), PROTOCOL_LENGTH);
     }
 
